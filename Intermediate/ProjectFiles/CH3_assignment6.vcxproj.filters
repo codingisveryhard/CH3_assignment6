@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CH3_assignment6.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CH3_assignment6.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CH3_assignment6Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CH3_assignment6">
+      <UniqueIdentifier>{8B9CCBC7-125C-38E0-BD7E-176EA4E88EDF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CH3_assignment6\CH3_assignment6.Build.cs">
+      <Filter>Source\CH3_assignment6</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CH3_assignment6\CH3_assignment6.cpp">
+      <Filter>Source\CH3_assignment6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\CH3_assignment6.h">
+      <Filter>Source\CH3_assignment6</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_assignment6\Private">
+      <UniqueIdentifier>{D969C9AF-A0B7-3398-8AC5-1EA3BBA3E8D2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\MoveActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\MovingActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\RotateActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_assignment6\Public">
+      <UniqueIdentifier>{83676A85-944D-3D07-A052-2766C6E222AF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\MoveActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\MovingActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\RotateActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
