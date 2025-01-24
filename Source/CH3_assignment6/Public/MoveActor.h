@@ -14,6 +14,11 @@ class CH3_ASSIGNMENT6_API AMoveActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AMoveActor();
+	// SpwanManager 에서 쓰기 위해 퍼블릭으로 배치시킴
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	FVector MoveSpeed;				
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	float MaxDistance;
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
@@ -21,10 +26,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
 	UStaticMeshComponent* StaticMeshComp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
-	FVector MoveSpeed;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
-	float MaxDistance;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
 	FVector StartLocation;
 

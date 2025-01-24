@@ -15,14 +15,16 @@ public:
 	// Sets default values for this actor's properties
 	ARotateActor();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	float RotationSpeed;
+
+
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
 	USceneComponent* SceneRoot;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
 	UStaticMeshComponent* StaticMeshComp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
-	float RotationSpeed;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
 	FVector MoveSpeed;
 

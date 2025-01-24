@@ -20,7 +20,15 @@ void ASpawnManager::RandomSpawn(TSubclassOf<AActor> ActorClass) {
 		AActor* SpawnActor = World->SpawnActor<AActor>(ActorClass, RandomRange, RandomRotate);
 
 		if (SpawnActor) {
-
+			AMoveActor* MoveActorInstance = Cast<AMoveActor>(SpawnActor);
+			if (MoveActorInstance) {
+				MoveActorInstance->MoveSpeed = FVector{ FMath::FRandRange(50.0f, 200.0f), 0.0f, 0.0f };
+				MoveActorInstance->MaxDistance = float { static_cast<float>(FMath::FRandRange(MoveActorInstance->MoveSpeed.X, 400.0f)) };
+			}
+			ARotateActor* RotateActorInstance = Cast<ARotateActor>(SpawnActor);
+			if (RotateActorInstance) {
+				RotateActorInstance->RotationSpeed = float{ FMath::FRandRange(100.0f, 400.0f) };
+			}
 		}
 	}
 }
