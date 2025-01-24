@@ -11,6 +11,8 @@
     <None Include="..\..\Source\CH3_assignment6Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -51,6 +53,9 @@
     <ClCompile Include="..\..\Source\CH3_assignment6\Private\RotateActor.cpp">
       <Filter>Source\CH3_assignment6\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\WarpActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\CH3_assignment6\Public">
       <UniqueIdentifier>{83676A85-944D-3D07-A052-2766C6E222AF}</UniqueIdentifier>
     </Filter>
@@ -61,6 +66,9 @@
       <Filter>Source\CH3_assignment6\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Public\RotateActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\WarpActor.h">
       <Filter>Source\CH3_assignment6\Public</Filter>
     </ClCompile>
   </ItemGroup>
