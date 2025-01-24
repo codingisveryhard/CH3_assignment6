@@ -16,13 +16,20 @@ public:
 	AWarpActor();
 
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
 	USceneComponent* SceneRoot;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Components")
 	UStaticMeshComponent* StaticMeshComp;
 
-	FVector StartLocation;
-	FVector MaxWarp;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	FVector StartLocation;		// 초기 위치값 저장
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	FVector MaxWarp;			// 최대 이동거리 설정
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	float RepeatTime;
 
-	void Warp();
+	UFUNCTION(BlueprintCallable, Category = "Plat| Event")
+	void Warp();				// 액터의 위치 이동 함수
 
 protected:
 	// Called when the game starts or when spawned

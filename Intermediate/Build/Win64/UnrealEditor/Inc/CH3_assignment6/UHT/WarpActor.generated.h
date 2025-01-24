@@ -14,6 +14,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CH3_ASSIGNMENT6_WarpActor_generated_h
 
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execWarp);
+
+
 #define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarpActor(); \
@@ -39,6 +43,7 @@ public: \
 #define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_INCLASS_NO_PURE_DECLS \
 	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \

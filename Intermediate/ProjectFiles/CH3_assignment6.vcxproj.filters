@@ -44,6 +44,9 @@
     <Filter Include="Source\CH3_assignment6\Private">
       <UniqueIdentifier>{D969C9AF-A0B7-3398-8AC5-1EA3BBA3E8D2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\FlashActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Private\MoveActor.cpp">
       <Filter>Source\CH3_assignment6\Private</Filter>
     </ClCompile>
@@ -59,6 +62,9 @@
     <Filter Include="Source\CH3_assignment6\Public">
       <UniqueIdentifier>{83676A85-944D-3D07-A052-2766C6E222AF}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\FlashActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Public\MoveActor.h">
       <Filter>Source\CH3_assignment6\Public</Filter>
     </ClCompile>
