@@ -15,11 +15,11 @@ class AActor;
 #endif
 #define CH3_ASSIGNMENT6_SpawnManager_generated_h
 
-#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execRandomSpawn);
 
 
-#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASpawnManager(); \
 	friend struct Z_Construct_UClass_ASpawnManager_Statics; \
@@ -28,7 +28,7 @@ public: \
 	DECLARE_SERIALIZER(ASpawnManager)
 
 
-#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASpawnManager(ASpawnManager&&); \
@@ -40,13 +40,13 @@ public: \
 	NO_API virtual ~ASpawnManager();
 
 
-#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_11_PROLOG
-#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_GENERATED_BODY \
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_PROLOG
+#define FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_INCLASS_NO_PURE_DECLS \
-	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_14_ENHANCED_CONSTRUCTORS \
+	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_INCLASS_NO_PURE_DECLS \
+	FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -10,10 +10,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSpawnManager() {}
 
 // Begin Cross Module References
+CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_AFlashActor_NoRegister();
 CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_AMoveActor_NoRegister();
+CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_AMovingActor_NoRegister();
 CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_ARotateActor_NoRegister();
 CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_ASpawnManager();
 CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_ASpawnManager_NoRegister();
+CH3_ASSIGNMENT6_API UClass* Z_Construct_UClass_AWarpActor_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -98,6 +101,18 @@ struct Z_Construct_UClass_ASpawnManager_Statics
 		{ "Category", "Spawn| Actors" },
 		{ "ModuleRelativePath", "Public/SpawnManager.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MovingActor_MetaData[] = {
+		{ "Category", "Spawn| Actors" },
+		{ "ModuleRelativePath", "Public/SpawnManager.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WarpActor_MetaData[] = {
+		{ "Category", "Spawn| Actors" },
+		{ "ModuleRelativePath", "Public/SpawnManager.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FlashActor_MetaData[] = {
+		{ "Category", "Spawn| Actors" },
+		{ "ModuleRelativePath", "Public/SpawnManager.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CreateNumber_MetaData[] = {
 		{ "Category", "Spawn| Properties" },
 		{ "ModuleRelativePath", "Public/SpawnManager.h" },
@@ -115,6 +130,9 @@ struct Z_Construct_UClass_ASpawnManager_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_MoveActor;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_RotateActor;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_MovingActor;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_WarpActor;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_FlashActor;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_CreateNumber;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_SpawnRange;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -130,11 +148,17 @@ struct Z_Construct_UClass_ASpawnManager_Statics
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_MoveActor = { "MoveActor", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, MoveActor), Z_Construct_UClass_UClass, Z_Construct_UClass_AMoveActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveActor_MetaData), NewProp_MoveActor_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_RotateActor = { "RotateActor", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, RotateActor), Z_Construct_UClass_UClass, Z_Construct_UClass_ARotateActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotateActor_MetaData), NewProp_RotateActor_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_MovingActor = { "MovingActor", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, MovingActor), Z_Construct_UClass_UClass, Z_Construct_UClass_AMovingActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MovingActor_MetaData), NewProp_MovingActor_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_WarpActor = { "WarpActor", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, WarpActor), Z_Construct_UClass_UClass, Z_Construct_UClass_AWarpActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WarpActor_MetaData), NewProp_WarpActor_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_FlashActor = { "FlashActor", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, FlashActor), Z_Construct_UClass_UClass, Z_Construct_UClass_AFlashActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlashActor_MetaData), NewProp_FlashActor_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_CreateNumber = { "CreateNumber", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, CreateNumber), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CreateNumber_MetaData), NewProp_CreateNumber_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpawnManager_Statics::NewProp_SpawnRange = { "SpawnRange", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnManager, SpawnRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnRange_MetaData), NewProp_SpawnRange_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpawnManager_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_MoveActor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_RotateActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_MovingActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_WarpActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_FlashActor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_CreateNumber,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnManager_Statics::NewProp_SpawnRange,
 };
@@ -179,10 +203,10 @@ ASpawnManager::~ASpawnManager() {}
 struct Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpawnManager, ASpawnManager::StaticClass, TEXT("ASpawnManager"), &Z_Registration_Info_UClass_ASpawnManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnManager), 2568789745U) },
+		{ Z_Construct_UClass_ASpawnManager, ASpawnManager::StaticClass, TEXT("ASpawnManager"), &Z_Registration_Info_UClass_ASpawnManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnManager), 773594070U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_327154261(TEXT("/Script/CH3_assignment6"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_2553329025(TEXT("/Script/CH3_assignment6"),
 	Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnManager_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -6,6 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "MoveActor.h"
 #include "RotateActor.h"
+#include "MovingActor.h"
+#include "WarpActor.h"
+#include "FlashActor.h"
 #include "SpawnManager.generated.h"
 
 UCLASS()
@@ -22,6 +25,12 @@ protected:
 	TSubclassOf<AMoveActor> MoveActor;
 	UPROPERTY(EditAnywhere, Category = "Spawn| Actors")
 	TSubclassOf<ARotateActor> RotateActor;
+	UPROPERTY(EditAnywhere, Category = "Spawn| Actors")
+	TSubclassOf<AMovingActor> MovingActor;
+	UPROPERTY(EditAnywhere, Category = "Spawn| Actors")
+	TSubclassOf<AWarpActor> WarpActor;
+	UPROPERTY(EditAnywhere, Category = "Spawn| Actors")
+	TSubclassOf<AFlashActor> FlashActor;
 
 	UPROPERTY(EditAnywhere, Category = "Spawn| Properties")
 	int32 CreateNumber;										// 액터가 생성될 숫자

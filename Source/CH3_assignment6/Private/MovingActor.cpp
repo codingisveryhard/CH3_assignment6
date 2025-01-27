@@ -14,11 +14,11 @@ AMovingActor::AMovingActor()
 	StaticMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMeshComp->SetupAttachment(SceneRoot);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("/Game/AdvancedVillagePack/Meshes/SM_Bridge_Var03.SM_Bridge_Var03"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshAsset(TEXT("/Game/AdvancedVillagePack/Meshes/SM_Cauldron.SM_Cauldron"));
 	if (MeshAsset.Succeeded()) {
 		StaticMeshComp->SetStaticMesh(MeshAsset.Object);
 	}
-	static ConstructorHelpers::FObjectFinder<UMaterial> MaterialAsset(TEXT("/Game/AdvancedVillagePack/Materials/M_Inst_Pack_07.M_Inst_Pack_07"));
+	static ConstructorHelpers::FObjectFinder<UMaterial> MaterialAsset(TEXT("/Game/AdvancedVillagePack/Materials/M_Inst_Pack_02.M_Inst_Pack_02"));
 	if (MaterialAsset.Succeeded()) {
 		StaticMeshComp->SetMaterial(0, MaterialAsset.Object);
 	}
