@@ -56,7 +56,13 @@
     <ClCompile Include="..\..\Source\CH3_assignment6\Private\RotateActor.cpp">
       <Filter>Source\CH3_assignment6\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\SpawnActor.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Private\SpawnManager.cpp">
+      <Filter>Source\CH3_assignment6\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Private\SpawnRow.cpp">
       <Filter>Source\CH3_assignment6\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Private\WarpActor.cpp">
@@ -77,7 +83,13 @@
     <ClCompile Include="..\..\Source\CH3_assignment6\Public\RotateActor.h">
       <Filter>Source\CH3_assignment6\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\SpawnActor.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Public\SpawnManager.h">
+      <Filter>Source\CH3_assignment6\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_assignment6\Public\SpawnRow.h">
       <Filter>Source\CH3_assignment6\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CH3_assignment6\Public\WarpActor.h">
