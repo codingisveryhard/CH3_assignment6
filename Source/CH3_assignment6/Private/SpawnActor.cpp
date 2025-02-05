@@ -127,8 +127,10 @@ void ASpawnActor::SpawningActor(TSubclassOf<AActor> ActorClass)		// 강의에서
 		AMoveActor* MoveActor = Cast<AMoveActor>(SpawnedActor);
 		if (MoveActor)
 		{
-			MoveActor->MoveSpeed = FVector{ FMath::FRandRange(50.0f, 800.0f), 0.0f, 0.0f };
-			MoveActor->MaxDistance = static_cast<float>(FMath::FRandRange(MoveActor->MoveSpeed.X, 400.0f));
+			FName RowName = "Move";
+			FSpawnRow* Data = ActorDataTable->FindRow<FSpawnRow>(RowName, TEXT(""));
+			MoveActor->MoveSpeed = FVector{ FMath::FRandRange(Data->MinMoveSpeed, Data->MaxMoveSpeed), 0.0f, 0.0f };
+			MoveActor->MaxDistance = static_cast<float>(FMath::FRandRange(Data->MinDistance, Data->MaxDistance));
 		}
 	}
 }
