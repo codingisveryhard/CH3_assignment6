@@ -1,7 +1,8 @@
-// 3주차 14강 내용을 바탕으로 만들어 보았습니다 (작동은 확인, 실제 사용X)(랜덤 위치 생성만 적용, 내부 변수 변경X)
+// 3주차 14강 내용을 바탕으로 만들어 보았습니다
 
 
 #include "SpawnActor.h"
+#include "MoveActor.h"
 
 
 // Sets default values
@@ -114,11 +115,22 @@ void ASpawnActor::SpawningActor(TSubclassOf<AActor> ActorClass)		// 강의에서
 {
 	if (!ActorClass) return;
 
-	GetWorld()->SpawnActor<AActor>(
+	AActor* SpawnedActor =  GetWorld()->SpawnActor<AActor>(
 		ActorClass,
 		GetRandomSpawnLocation(),
 		FRotator(0.0f, FMath::RandRange(0.0f, 360.0f), 0.0f)		// 생성 시 회전 방향을 Y축 기준으로 랜덤 생성
 	);
+	// 생성된 액터가 유효한지 확인
+	if (SpawnedActor)
+	{
+		// 또는 액터 클래스에 직접 변수가 있다면
+		AMoveActor* MoveActor = Cast<AMoveActor>(SpawnedActor);
+		if (MoveActor)
+		{
+			MoveActor->MoveSpeed = FVector{ FMath::FRandRange(50.0f, 800.0f), 0.0f, 0.0f };
+			MoveActor->MaxDistance = static_cast<float>(FMath::FRandRange(MoveActor->MoveSpeed.X, 400.0f));
+		}
+	}
 }
 
 // Called when the game starts or when spawned

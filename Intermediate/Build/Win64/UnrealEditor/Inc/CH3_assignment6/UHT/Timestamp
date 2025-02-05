@@ -1,8 +1,8 @@
 C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\FlashActor.h
-C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\WarpActor.h
-C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\RotateActor.h
-C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\SpawnActor.h
-C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\SpawnManager.h
 C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\MoveActor.h
-C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\MovingActor.h
+C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\SpawnActor.h
 C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\SpawnRow.h
+C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\MovingActor.h
+C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\RotateActor.h
+C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\WarpActor.h
+C:\VS\CH3_assignment6\Source\CH3_assignment6\Public\SpawnManager.h

@@ -1,4 +1,4 @@
-// 3주차 14강 내용을 바탕으로 만들어 보았습니다 (작동은 확인, 실제 사용X)(랜덤 위치 생성만 적용, 내부 변수 변경X)
+// 3주차 14강 내용을 바탕으로 만들어 보았습니다
 
 #pragma once
 
@@ -19,5 +19,12 @@ public:
 	TSubclassOf<AActor> ActorClass;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float SpawnChance;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor")
+	float MaxMoveSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor")
+	float MinMoveSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor")
+	float MaxDistance;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor")
+	float MinDistance;
 };
