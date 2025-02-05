@@ -93,12 +93,17 @@ struct Z_Construct_UClass_AFlashActor_Statics
 		{ "ToolTip", "\xea\xb0\x80\xec\x8b\x9c \xec\x83\x81\xed\x83\x9c\xec\x9d\xb8\xec\xa7\x80 \xed\x99\x95\xec\x9d\xb8\xed\x95\x98\xeb\x8a\x94 \xeb\xb3\x80\xec\x88\x98 (\xec\xb6\xa9\xeb\x8f\x8c\xec\x97\x90\xec\x84\x9c\xeb\x8f\x84 \xec\x82\xac\xec\x9a\xa9)" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DelayTime_MetaData[] = {
+		{ "Category", "Plat| Properties" },
+		{ "ModuleRelativePath", "Public/FlashActor.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StaticMeshComp;
 	static void NewProp_IsVisible_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsVisible;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RepeatTime;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DelayTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -118,11 +123,13 @@ void Z_Construct_UClass_AFlashActor_Statics::NewProp_IsVisible_SetBit(void* Obj)
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFlashActor_Statics::NewProp_IsVisible = { "IsVisible", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AFlashActor), &Z_Construct_UClass_AFlashActor_Statics::NewProp_IsVisible_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsVisible_MetaData), NewProp_IsVisible_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashActor_Statics::NewProp_RepeatTime = { "RepeatTime", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlashActor, RepeatTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RepeatTime_MetaData), NewProp_RepeatTime_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlashActor_Statics::NewProp_DelayTime = { "DelayTime", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlashActor, DelayTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DelayTime_MetaData), NewProp_DelayTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlashActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashActor_Statics::NewProp_SceneRoot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashActor_Statics::NewProp_StaticMeshComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashActor_Statics::NewProp_IsVisible,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashActor_Statics::NewProp_RepeatTime,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlashActor_Statics::NewProp_DelayTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFlashActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFlashActor_Statics::DependentSingletons[])() = {
@@ -165,10 +172,10 @@ AFlashActor::~AFlashActor() {}
 struct Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_FlashActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFlashActor, AFlashActor::StaticClass, TEXT("AFlashActor"), &Z_Registration_Info_UClass_AFlashActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlashActor), 223266134U) },
+		{ Z_Construct_UClass_AFlashActor, AFlashActor::StaticClass, TEXT("AFlashActor"), &Z_Registration_Info_UClass_AFlashActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlashActor), 2864294614U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_FlashActor_h_867432314(TEXT("/Script/CH3_assignment6"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_FlashActor_h_2378490976(TEXT("/Script/CH3_assignment6"),
 	Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_FlashActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_FlashActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

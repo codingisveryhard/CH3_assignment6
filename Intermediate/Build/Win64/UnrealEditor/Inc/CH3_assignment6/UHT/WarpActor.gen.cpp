@@ -104,12 +104,17 @@ struct Z_Construct_UClass_AWarpActor_Statics
 		{ "ToolTip", "\xec\xb5\x9c\xeb\x8c\x80 \xec\x9d\xb4\xeb\x8f\x99\xea\xb1\xb0\xeb\xa6\xac \xec\x84\xa4\xec\xa0\x95" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DelayTime_MetaData[] = {
+		{ "Category", "Plat| Properties" },
+		{ "ModuleRelativePath", "Public/WarpActor.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StaticMeshComp;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_StartLocation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxWarp;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RepeatTime;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DelayTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -126,12 +131,14 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarpActor_Sta
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWarpActor_Statics::NewProp_StartLocation = { "StartLocation", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarpActor, StartLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartLocation_MetaData), NewProp_StartLocation_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWarpActor_Statics::NewProp_MaxWarp = { "MaxWarp", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarpActor, MaxWarp), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxWarp_MetaData), NewProp_MaxWarp_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWarpActor_Statics::NewProp_RepeatTime = { "RepeatTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarpActor, RepeatTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RepeatTime_MetaData), NewProp_RepeatTime_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWarpActor_Statics::NewProp_DelayTime = { "DelayTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarpActor, DelayTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DelayTime_MetaData), NewProp_DelayTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWarpActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_SceneRoot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_StaticMeshComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_StartLocation,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_MaxWarp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_RepeatTime,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarpActor_Statics::NewProp_DelayTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarpActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWarpActor_Statics::DependentSingletons[])() = {
@@ -174,10 +181,10 @@ AWarpActor::~AWarpActor() {}
 struct Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarpActor, AWarpActor::StaticClass, TEXT("AWarpActor"), &Z_Registration_Info_UClass_AWarpActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarpActor), 867366129U) },
+		{ Z_Construct_UClass_AWarpActor, AWarpActor::StaticClass, TEXT("AWarpActor"), &Z_Registration_Info_UClass_AWarpActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarpActor), 4262798753U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_3818618147(TEXT("/Script/CH3_assignment6"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_3670671643(TEXT("/Script/CH3_assignment6"),
 	Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_WarpActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

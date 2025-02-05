@@ -24,6 +24,8 @@ public:
 	bool IsVisible;				// 가시 상태인지 확인하는 변수 (충돌에서도 사용)
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
 	float RepeatTime;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	float DelayTime;
 
 	UFUNCTION(BlueprintCallable, Category = "Plat| Event")
 	void ToggleVisibility();	// 가시 충돌 상태 <=> 비가시 비충돌 상태 전환 함수

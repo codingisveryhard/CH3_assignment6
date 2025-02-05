@@ -34,6 +34,8 @@ public:
 	void SpawnRandomActor();
 	FVector GetRandomSpawnLocation();
 	void SpawningActor(TSubclassOf<AActor> ActorClass);
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spawning")
+	int32 CreateNumber;
 
 protected:
 	// Called when the game starts or when spawned

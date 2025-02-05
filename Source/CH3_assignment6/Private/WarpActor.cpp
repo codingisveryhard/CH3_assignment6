@@ -26,6 +26,7 @@ AWarpActor::AWarpActor()
 	StartLocation = FVector{0.0f};
 	MaxWarp = FVector{ 500.0f, 500.0f, 0.0f };
 	RepeatTime = 2.0f;
+	DelayTime = 0.0f;
 }
 
 void AWarpActor::Warp()
@@ -47,7 +48,8 @@ void AWarpActor::BeginPlay()
 		this,
 		&AWarpActor::Warp,					// 실행할 함수
 		RepeatTime,								// 2초 간격으로 실행
-		true								// 반복 실행
+		true,								// 반복 실행
+		DelayTime
 	);
 }
 

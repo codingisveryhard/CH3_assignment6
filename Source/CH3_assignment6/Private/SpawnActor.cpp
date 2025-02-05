@@ -27,6 +27,9 @@ ASpawnActor::ASpawnActor()
 	if (SpawningCylinder) {
 		SpawningCylinder->SetHiddenInGame(true);		// 게임이 시작하면 보이지 않도록 숨김
 	}
+	
+	Scene->SetWorldScale3D(FVector(28.0f, 28.0f, 9.0f));
+	CreateNumber = 30;
 }
 
 FSpawnRow* ASpawnActor::GetRandomActor() const		// 강의에서 사용된 내용 그대로 입니다
@@ -122,7 +125,9 @@ void ASpawnActor::SpawningActor(TSubclassOf<AActor> ActorClass)		// 강의에서
 void ASpawnActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	for (int32 i = 0; i < CreateNumber; i++) {
+		SpawnRandomActor();
+	}
 }
 
 // Called every frame

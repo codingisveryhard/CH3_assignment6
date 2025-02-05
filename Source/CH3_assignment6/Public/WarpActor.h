@@ -27,6 +27,8 @@ protected:
 	FVector MaxWarp;			// 최대 이동거리 설정
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
 	float RepeatTime;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Plat| Properties")
+	float DelayTime;
 
 	UFUNCTION(BlueprintCallable, Category = "Plat| Event")
 	void Warp();				// 액터의 위치 이동 함수

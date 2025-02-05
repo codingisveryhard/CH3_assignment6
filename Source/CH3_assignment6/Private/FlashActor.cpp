@@ -23,8 +23,10 @@ AFlashActor::AFlashActor()
 		StaticMeshComp->SetMaterial(0, MaterialAsset.Object);
 	}
 
+	SceneRoot->SetWorldScale3D(FVector(3.0f, 3.0f, 1.0f));
 	IsVisible = true;
 	RepeatTime = 2.0f;
+	DelayTime = 0.0f;
 }
 
 void AFlashActor::ToggleVisibility() {
@@ -43,7 +45,8 @@ void AFlashActor::BeginPlay()
 		this,
 		&AFlashActor::ToggleVisibility,			// 실행될 함수
 		RepeatTime,									// 2초 간격으로 실행
-		true									// 반복적으로 실행
+		true,									// 반복적으로 실행
+		DelayTime
 	);
 }
 

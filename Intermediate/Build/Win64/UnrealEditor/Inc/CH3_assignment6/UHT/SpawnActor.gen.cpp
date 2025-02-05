@@ -90,10 +90,15 @@ struct Z_Construct_UClass_ASpawnActor_Statics
 		{ "ToolTip", "\xec\x9b\x90\xed\x86\xb5\xed\x98\x95 \xeb\xaa\xa8\xec\x96\x91\xec\x9c\xbc\xeb\xa1\x9c \xeb\xa7\x8c\xeb\x93\xa4\xec\x96\xb4\xeb\xb3\xb4\xea\xb3\xa0\xec\x9e\x90 \xed\x95\x9c\xeb\x8b\xa4" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CreateNumber_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/SpawnActor.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Scene;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpawningCylinder;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActorDataTable;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_CreateNumber;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -108,10 +113,12 @@ struct Z_Construct_UClass_ASpawnActor_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawnActor_Statics::NewProp_Scene = { "Scene", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnActor, Scene), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Scene_MetaData), NewProp_Scene_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawnActor_Statics::NewProp_SpawningCylinder = { "SpawningCylinder", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnActor, SpawningCylinder), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawningCylinder_MetaData), NewProp_SpawningCylinder_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawnActor_Statics::NewProp_ActorDataTable = { "ActorDataTable", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnActor, ActorDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorDataTable_MetaData), NewProp_ActorDataTable_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpawnActor_Statics::NewProp_CreateNumber = { "CreateNumber", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawnActor, CreateNumber), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CreateNumber_MetaData), NewProp_CreateNumber_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpawnActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnActor_Statics::NewProp_Scene,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnActor_Statics::NewProp_SpawningCylinder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnActor_Statics::NewProp_ActorDataTable,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnActor_Statics::NewProp_CreateNumber,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASpawnActor_Statics::DependentSingletons[])() = {
@@ -154,10 +161,10 @@ ASpawnActor::~ASpawnActor() {}
 struct Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpawnActor, ASpawnActor::StaticClass, TEXT("ASpawnActor"), &Z_Registration_Info_UClass_ASpawnActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnActor), 2534975830U) },
+		{ Z_Construct_UClass_ASpawnActor, ASpawnActor::StaticClass, TEXT("ASpawnActor"), &Z_Registration_Info_UClass_ASpawnActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnActor), 59494234U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnActor_h_2455673279(TEXT("/Script/CH3_assignment6"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnActor_h_996903704(TEXT("/Script/CH3_assignment6"),
 	Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VS_CH3_assignment6_Source_CH3_assignment6_Public_SpawnActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

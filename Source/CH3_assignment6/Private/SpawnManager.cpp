@@ -22,12 +22,12 @@ void ASpawnManager::RandomSpawn(TSubclassOf<AActor> ActorClass) {
 		if (SpawnActor) {
 			AMoveActor* MoveActorInstance = Cast<AMoveActor>(SpawnActor);
 			if (MoveActorInstance) {
-				MoveActorInstance->MoveSpeed = FVector{ FMath::FRandRange(50.0f, 200.0f), 0.0f, 0.0f };
+				MoveActorInstance->MoveSpeed = FVector{ FMath::FRandRange(50.0f, 800.0f), 0.0f, 0.0f };
 				MoveActorInstance->MaxDistance = static_cast<float>(FMath::FRandRange(MoveActorInstance->MoveSpeed.X, 400.0f));
 			}
 			ARotateActor* RotateActorInstance = Cast<ARotateActor>(SpawnActor);
 			if (RotateActorInstance) {
-				RotateActorInstance->RotationSpeed = FMath::FRandRange(100.0f, 400.0f);
+				RotateActorInstance->RotationSpeed = FMath::FRandRange(100.0f, 800.0f);
 			}
 		}
 	}
@@ -52,6 +52,7 @@ void ASpawnManager::BeginPlay()
 	if (FlashActor) {				// 액터가 배치되어 있으면 작동
 		RandomSpawn(FlashActor);	// 나타났다 사라지는 액터 생성
 	}
+
 }
 
 // Called every frame
